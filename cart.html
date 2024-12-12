@@ -6,8 +6,10 @@
     <link rel="stylesheet" href="./css/reset.css">
     <title>Burger Lab</title>
     <link rel="icon" type="image/x-icon" href="./images/icons/burger-solid.svg">
+    <link rel="stylesheet" href="./css/base.css">
     
     <style>
+    
       img {
         width: 150px;
       }
@@ -22,22 +24,68 @@
     </header>
 
     <section>
-      <div class="item-container"
-        <img src="./images/burgers/"
+      <div class="item-container">
+        <img src="./images/burgers/cheeseburger.jpg">
+        <h3>Cheeseburger</h3>
+        <div class="item-price">$10.99</div>
+        <div class="item-amount-controlls">
+          <img src="./images/icons/minus.png">
+          <div class="item-amount">1</div>
+          <img src="./images/icons/plus.png">
+        </div>
+        <img src="./images/icons/delete.png">
+      </div>
+
+      <div class="item-container">
+        <img src="./images/sides/fries.jpg">
+        <h3>French fries</h3>
+        <div class="item-price">$5.99 x 2</div>
+        <div class="item-amount-controlls">
+          <img src="./images/icons/minus.png">
+          <div class="item-amount">2</div>
+          <img src="./images/icons/plus.png">
+        </div>
+        <img src="./images/icons/delete.png">
+      </div>
+        
     </section>
 
-    <section>
+    <section class="order-summary">
+      <select name="restaurant" id="restaurant">
+        <option>Choose your restaurant</option>
+        <option value="Oulu Center">Oulu Center</option>
+        <option value="Oulu Tuira">Oulu Tuira</option>
+        <option value="Oulu Kaakkuri">Oulu Kaakkuri</option>
+      </select>
+
+      <div class="price-summary">
+        <div class="total">Total</div>
+        <div class="total-price">$22.97</div>
+      </div>
+
+      <button type="submit">Order now</button>
+        
 
     </section>
 
-    <footer>
+    <footer class="footer">
       <nav>
-        <ul>
-          <li><a href="index.html"><img src="./images/icons/home.png">Home</a></li>
-          <li><a href="menu.html"><img src="./images/icons/menu_book.svg">Menu</a></li>
-          <li><a href="cart.html"><img src="./images/icons/shopping_cart.png">Cart</a></li>
-          <li><a href="restaurants.html"><img src="./images/icons/map.png">Restaurants</a></li>
-          <li><a href="contact.html"><img src="./images/icons/contact.png">Contact Us</a></li>
+        <ul class="navbar">
+          <li>
+            <a class="footer-item" href="index.html"><img class="footer-icon" src="./images/icons/home.png">Home</a>
+          </li>
+          <li>
+            <a class="footer-item" href="menu.html"><img src="./images/icons/menu_book.svg" class="footer-icon">Menu</a>
+          </li>
+          <li>
+            <a href="cart.html" class="footer-item"><img src="./images/icons/shopping_cart.png" class="footer-icon">Cart</a>
+          </li>
+          <li>
+            <a href="restaurants.html"  class="footer-item"><img src="./images/icons/map.png" class="footer-icon">Restaurants</a>
+          </li>
+          <li>
+            <a href="contact.html"  class="footer-item"><img src="./images/icons/contact.png" class="footer-icon">Contact Us</a>
+          </li>
         </ul>
       </nav>
     </footer>

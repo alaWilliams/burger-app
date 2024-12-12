@@ -1,0 +1,9 @@
+/* Setting the color palette */
+:root {
+  --primary-color: #212121;
+  --secondary-color: #f5f5f5; 
+  --accent-color: #Ffb300; 
+  --accent2-color: #D32F2F; 
+  --accent3-color: #8E1F2A;
+  --text-color: #292D32;
+} 

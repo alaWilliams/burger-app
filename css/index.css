@@ -1,0 +1,63 @@
+@import url(./palette.css);
+
+body {
+  height: 100vh;
+}
+.logo {
+  width: 80vw;
+  aspect-ratio: 1;
+  max-width: 500px;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  object-fit: cover;
+}
+
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size:3rem;
+  color: var(--accent2-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.burger-icon {
+  width: 3rem;
+}
+
+.btn {
+  background-color: var(--accent-color);
+  font-weight: 700;
+  width: 85%;
+  height: 5rem;
+  font-size: 2.5rem;
+}
+
+.btn > * {
+  color: var(--text-color);
+}
+
+.btn-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.flex {
+  justify-content: space-around;
+}
+

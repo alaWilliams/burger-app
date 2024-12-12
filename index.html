@@ -6,26 +6,43 @@
     <link rel="stylesheet" href="./css/reset.css">
     <title>Burger Lab</title>
     <link rel="icon" type="image/x-icon" href="./images/icons/burger-solid.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
 
   </head>
+
   <body>
-    <header>
-      <img style="width: 50vw; height:50wh" src="./images/burger-lab.jpg">
+    <section class="header">
+      <img class="logo" src="./images/burger-lab.jpg">
       <h1>Welcome to</h1>
-      <h2><img src=./images/icons/burger-solid.svg style="width:20px"> Burger Lab</h2>
-    </header>
+      <h2><img src=./images/icons/burger-solid.svg class="burger-icon"> Burger Lab</h2>
+      <button class="btn"><a href="menu.html" class="flex" ><img src=./images/icons/menu_book.svg class="btn-icon">Our Menu</a></button>
+    </section>
     
-    <button><a href="menu.html"><img src=./images/icons/menu_book.svg>Our Menu</a></button>
+  
 
     
-    <footer>
+    <footer class="footer">
       <nav>
-        <ul>
-          <li><a href="index.html"><img src="./images/icons/home.png">Home</a></li>
-          <li><a href="menu.html"><img src="./images/icons/menu_book.svg">Menu</a></li>
-          <li><a href="cart.html"><img src="./images/icons/shopping_cart.png">Cart</a></li>
-          <li><a href="restaurants.html"><img src="./images/icons/map.png">Restaurants</a></li>
-          <li><a href="contact.html"><img src="./images/icons/contact.png">Contact Us</a></li>
+        <ul class="navbar">
+          <li class="current">
+            <a class="footer-item" href="index.html"><img class="footer-icon" src="./images/icons/home.png">Home</a>
+          </li>
+          <li>
+            <a class="footer-item" href="menu.html"><img src="./images/icons/menu_book.svg" class="footer-icon">Menu</a>
+          </li>
+          <li>
+            <a href="cart.html" class="footer-item"><img src="./images/icons/shopping_cart.png" class="footer-icon">Cart</a>
+          </li>
+          <li>
+            <a href="restaurants.html"  class="footer-item"><img src="./images/icons/map.png" class="footer-icon">Restaurants</a>
+          </li>
+          <li>
+            <a href="contact.html"  class="footer-item"><img src="./images/icons/contact.png" class="footer-icon">Contact Us</a>
+          </li>
         </ul>
       </nav>
     </footer>

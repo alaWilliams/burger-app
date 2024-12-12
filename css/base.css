@@ -1,0 +1,83 @@
+@import url(./palette.css);
+
+html {
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+body { background-color: var(--primary-color)}
+
+.footer { 
+  background-color: var(--secondary-color);
+  opacity: 0.5;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.footer-item {
+  color: var(--text-color);
+  font-size:0.75rem;
+
+}
+li > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.footer-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+li {
+  min-width:5rem;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.burger {
+  filter: var(--accent-color);
+}
+
+.btn {
+  border-radius: 8px; 
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.current {
+  border-top: 3px solid var(--accent2-color)
+}
+
+.btn:hover {
+  transform: scale(1.05); /* Slightly enlarge the button */
+  background-color: var(--accent2-color);
+
+}

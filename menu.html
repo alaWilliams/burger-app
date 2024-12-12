@@ -6,10 +6,13 @@
     <link rel="stylesheet" href="./css/reset.css">
     <title>Burger Lab</title>
     <link rel="icon" type="image/x-icon" href="./images/icons/burger-solid.svg">
+    <link rel="stylesheet" href="./css/base.css">
+    
     <style>
       img {
         width: 150px;
       }
+    
     </style>
 
   </head>
@@ -45,7 +48,7 @@
           <img src="./images/burgers/cheeseburger.jpg">
           <h3>Cheeseburger</h3>
           <p class="description">A classic burger featuring a juicy beef patty, fresh lettuce, ripe tomatoes, and melted cheddar cheese, all sandwiched between a soft, toasted bun.</p>
-          <div class="item-price">$9.99</div>
+          <div class="item-price">$10.99</div>
           <img src="./images/icons/shopping_cart_add.png">
         </div>
 
@@ -225,14 +228,24 @@
     </section>
 
 
-    <footer>
+    <footer class="footer">
       <nav>
-        <ul>
-          <li><a href="index.html"><img src="./images/icons/home.png">Home</a></li>
-          <li><a href="menu.html"><img src="./images/icons/menu_book.svg">Menu</a></li>
-          <li><a href="cart.html"><img src="./images/icons/shopping_cart.png">Cart</a></li>
-          <li><a href="restaurants.html"><img src="./images/icons/map.png">Restaurants</a></li>
-          <li><a href="contact.html"><img src="./images/icons/contact.png">Contact Us</a></li>
+        <ul class="navbar">
+          <li>
+            <a class="footer-item" href="index.html"><img class="footer-icon" src="./images/icons/home.png">Home</a>
+          </li>
+          <li>
+            <a class="footer-item" href="menu.html"><img src="./images/icons/menu_book.svg" class="footer-icon">Menu</a>
+          </li>
+          <li>
+            <a href="cart.html" class="footer-item"><img src="./images/icons/shopping_cart.png" class="footer-icon">Cart</a>
+          </li>
+          <li>
+            <a href="restaurants.html"  class="footer-item"><img src="./images/icons/map.png" class="footer-icon">Restaurants</a>
+          </li>
+          <li>
+            <a href="contact.html"  class="footer-item"><img src="./images/icons/contact.png" class="footer-icon">Contact Us</a>
+          </li>
         </ul>
       </nav>
     </footer>
