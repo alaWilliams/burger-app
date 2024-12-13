@@ -16,8 +16,6 @@ body {
 .header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 h1 {
@@ -36,9 +34,7 @@ h2 {
   padding-bottom: 5vh;
 }
 
-.burger-icon {
-  width: 3rem;
-}
+
 
 .btn {
   background-color: var(--accent-color);

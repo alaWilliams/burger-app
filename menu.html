@@ -7,222 +7,304 @@
     <title>Burger Lab</title>
     <link rel="icon" type="image/x-icon" href="./images/icons/burger-solid.svg">
     <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/menu.css">
     
-    <style>
-      img {
-        width: 150px;
-      }
-    
-    </style>
-
   </head>
   <body>
-    <header>
-      <a href="index.html"><img src="./images/icons/arrow_circle_left.png"></a>
-      <h2>Menu</h2>
-      <a href="index.html"><h2><img style="width: 20px" src="./images/icons/burger-solid.svg">Burger Lab</h2></a>
+    <header class="header">
+      <a href="index.html"><img class="back-arrow" src="./images/icons/arrow-left.png"></a>
+      <div class="flex">
+        <h2 class="header-text">Menu</h2>
+       
+        <a href="index.html">
+            <h2 class="header-text flex">
+            <img class="burger-icon" src="./images/icons/burger-solid.svg">Burger Lab</h2>
+        </a>
     </header>
-    <section>
-      <div class="search-box"><img src="./images/icons/search.png"><input type="text" placeholder="Start typing"></div>
-      <nav class="navbar top-nav">
-        <ul>
-          <li><a href="#burgers">Burgers</a></li>
-          <li><a href="#sides">Sides</a></li>
-          <li><a href="#drinks">Drinks</a></li>
-          <li><a href="#desserts">Desserts</a></li>
+
+    <section class="main topnav-container">
+      <div class="search-box"><img class="search-icon" src="./images/icons/search.png"><input type="text" placeholder="Start typing" class="input"></div>
+      <nav>
+        <ul class="navbar top-nav">
+          <li class="topnav-item"><a class="topnav-item" href="#burgers">Burgers</a></li>
+          <li class="topnav-item"><a class="topnav-item" href="#sides">Sides</a></li>
+          <li class="topnav-item"><a class="topnav-item" href="#drinks">Drinks</a></li>
+          <li class="topnav-item"><a class="topnav-item" href="#desserts">Desserts</a></li>
           </ul>
       </nav>
-      <section class="burgers" id="burgers">
-        <h1>Burgers</h1>
 
-        <div class="item-container">
-          <img src="./images/burgers/classic-burger.jpg">
-          <h3>Classic burger</h3>
-          <p class="description">A classic burger featuring a juicy beef patty, fresh lettuce, ripe tomatoes, and melted cheddar cheese, all sandwiched between a soft, toasted bun.</p>
-          <div class="item-price">$9.99</div>
-          <img src="./images/icons/shopping_cart_add.png">
+      </section>
+
+      <section class="burgers main" id="burgers">
+        <h2 class="menu-section">Burgers</h2>
+        <div class="grid-container">
+          <div class="item-container">
+            <img class="menu-item-image" src="./images/burgers/classic-burger.jpg">
+            <h3>Classic burger</h3>
+            <p class="description">A classic burger featuring a juicy beef patty, fresh lettuce, ripe tomatoes, and melted cheddar cheese, all sandwiched between a soft, toasted bun.</p>
+            <div class="flex">
+              <div class="item-price">$9.99</div>
+              <img src="./images/icons/shopping_cart_add.png">
+              </div>
+            </div>
+           
+  
+          
+          <div class="item-container">
+            <img class="menu-item-image" src="./images/burgers/cheeseburger.jpg">
+            <h3>Cheeseburger</h3>
+            <p class="description">A classic burger featuring a juicy beef patty, fresh lettuce, ripe tomatoes, and melted cheddar cheese, all sandwiched between a soft, toasted bun.</p>
+            <div class="flex">
+              <div class="item-price">$10.99</div>
+              <img src="./images/icons/shopping_cart_add.png">
+            </div>
+            
+          </div>
+  
+          
+          <div class="item-container">
+            <img class="menu-item-image" src="./images/burgers/bacon-burger.jpg">
+            <h3>Bacon burger</h3>
+            <p class="description">A savory burger loaded with a juicy beef patty, crispy smoked bacon, melted cheddar, fresh lettuce, ripe tomatoes, and tangy BBQ sauce on a toasted brioche bun.</p>
+            <div class="flex">
+              <div class="item-price">$14.99</div>
+              <img src="./images/icons/shopping_cart_add.png">
+            </div>
+            
+          </div>
+  
+          
+          <div class="item-container">
+            <img class="menu-item-image" src="./images/burgers/veggie-burger.jpg">
+            <h3>Veggie burger</h3>
+            <p class="description">A wholesome burger featuring a hearty chickpea and quinoa patty, creamy avocado, crisp lettuce, tomatoes, and zesty garlic aioli on a soft whole-grain bun.</p>
+            <div class="flex">
+              <div class="item-price">$12.99</div>
+              <img src="./images/icons/shopping_cart_add.png">
+            </div>
+            
+          </div>
+  
+          
+          <div class="item-container">
+            <img class="menu-item-image" src="./images/burgers/arctic-burger.jpg">
+            <h3>Arctic Burger</h3>
+            <p class="description">The Arctic Burger combines a juicy reindeer patty with lingonberry aioli, sautéed wild mushrooms, crispy rye crumbles, and fresh arugula, all nestled in a hearty rye bun—a true taste of Finland’s north.</p>
+            <div class="flex">
+              <div class="item-price">$16.99</div>
+              <img src="./images/icons/shopping_cart_add.png">
+            </div>
+            
+          </div>
         </div>
-
         
-        <div class="item-container">
-          <img src="./images/burgers/cheeseburger.jpg">
-          <h3>Cheeseburger</h3>
-          <p class="description">A classic burger featuring a juicy beef patty, fresh lettuce, ripe tomatoes, and melted cheddar cheese, all sandwiched between a soft, toasted bun.</p>
-          <div class="item-price">$10.99</div>
-          <img src="./images/icons/shopping_cart_add.png">
-        </div>
-
-        
-        <div class="item-container">
-          <img src="./images/burgers/bacon-burger.jpg">
-          <h3>Bacon burger</h3>
-          <p class="description">A savory burger loaded with a juicy beef patty, crispy smoked bacon, melted cheddar, fresh lettuce, ripe tomatoes, and tangy BBQ sauce on a toasted brioche bun.</p>
-          <div class="item-price">$14.99</div>
-          <img src="./images/icons/shopping_cart_add.png">
-        </div>
-
-        
-        <div class="item-container">
-          <img src="./images/burgers/veggie-burger.jpg">
-          <h3>Veggie burger</h3>
-          <p class="description">A wholesome burger featuring a hearty chickpea and quinoa patty, creamy avocado, crisp lettuce, tomatoes, and zesty garlic aioli on a soft whole-grain bun.</p>
-          <div class="item-price">$12.99</div>
-          <img src="./images/icons/shopping_cart_add.png">
-        </div>
-
-        
-        <div class="item-container">
-          <img src="./images/burgers/arctic-burger.jpg">
-          <h3>Arctic Burger</h3>
-          <p class="description">The Arctic Burger combines a juicy reindeer patty with lingonberry aioli, sautéed wild mushrooms, crispy rye crumbles, and fresh arugula, all nestled in a hearty rye bun—a true taste of Finland’s north.</p>
-          <div class="item-price">$16.99</div>
-          <img src="./images/icons/shopping_cart_add.png">
-        </div>
         
 
       </section>
 
-      <section class="sides" id="sides">
-        <h2>Sides</h2>
+      <section class="sides main" id="sides">
+        <h2 class="menu-section">Sides</h2>
+
+        <div class="grid-container">
+          <div class="item-container">
+            <img class="menu-item-image" src="./images/sides/fries.jpg">
+            <h3>French Fries</h3>
+            <p class="description">Crispy and golden, served plain or seasoned</p>
+            <div class="flex">
+              <div class="item-price">$5.99</div>
+            <img src="./images/icons/shopping_cart_add.png">
+            </div>
+            
+          </div>
+  
+          <div class="item-container">
+              <img class="menu-item-image" src="./images/sides/onion-rings.jpg">
+              <h3>Onion Rings</h3>
+              <p class="description">Crispy and golden, served with BBQ or ranch sauce.</p>
+              <div class="flex">
+                <div class="item-price">$6.99</div>
+                <img src="./images/icons/shopping_cart_add.png">
+              </div>
+              
+          </div>
+  
+          <div class="item-container">
+            <img class="menu-item-image" src="./images/sides/garlic-bread.jpg">
+            <h3>Garlic Bread</h3>
+            <p class="description">Garlic breadsticks with a hint of parmesan and herbs.</p>
+            <div class="flex">
+              <div class="item-price">$4.99</div>
+              <img src="./images/icons/shopping_cart_add.png">
+            </div>
+            
+          </div>
+  
+           <div class="item-container">
+              <img class="menu-item-image" src="./images/sides/chicken-wings.jpg">
+              <h3>Chicken Wings</h3>
+              <p class="description">Juicy and flavorful wings tossed in your choice of BBQ or spicy buffalo sauce.</p>
+              <div class="flex">
+                <div class="item-price">$11.99</div>
+                <img src="./images/icons/shopping_cart_add.png">
+              </div>
+              
+          </div>
+  
+          <div class="item-container">
+              <img class="menu-item-image" src="./images/sides/strawberry-feta.jpg">
+              <h3>Strawberry-Feta Salad</h3>
+              <p class="description">Fresh greens with sweet strawberries, creamy feta, mint, and a balsamic glaze.
+              </p>
+              <div class="flex">
+                <div class="item-price">$8.99</div>
+                <img src="./images/icons/shopping_cart_add.png">
+              </div>
+              
+          </div>
+          </div>
+        </div>
+
+       
+      </section> 
+
+      <section class="drinks main" id="drinks">
+        <h2 class="menu-section">Drinks</h2>
+
+        <div class="grid-container"><div class="item-container">
+          <img class="menu-item-image" src="./images/drinks/coca-cola.jpg">
+          <h3>Coca-Cola</h3>
+          <p class="description">Classic, refreshing cola with a bold and crisp taste.</p>
+          <div class="flex">
+            <div class="item-price">$2.99</div>
+            <img src="./images/icons/shopping_cart_add.png">
+          </div>
+      
+        </div>
 
         <div class="item-container">
-          <img src="./images/sides/fries.jpg">
-          <h3>French Fries</h3>
-          <p class="description">Crispy and golden, served plain or seasoned</p>
-          <div class="item-price">$5.99</div>
-          <img src="./images/icons/shopping_cart_add.png">
+          <img class="menu-item-image" src="./images/drinks/fanta.jpg">
+          <h3>Fanta</h3>
+          <p class="description">Sweet and fizzy orange soda with a zesty citrus flavor.
+          </p>
+          <div class="flex">  
+            <div class="item-price">$2.99</div>
+            <img src="./images/icons/shopping_cart_add.png"></div>
 
-          <div class="item-container">
-            <img src="./images/sides/onion-rings.jpg">
-            <h3>Onion Rings</h3>
-            <p class="description">Crispy and golden, served with BBQ or ranch sauce.</p>
+        
+        </div>
+
+        <div class="item-container">
+          <img class="menu-item-image" src="./images/drinks/iced-tea.jpg">
+          <h3>Iced Tea</h3>
+          <p class="description">Refreshing cold brew tea with a hint of lemon or peach.
+          </p>
+          <div class="flex">
+            <div class="item-price">$3.99</div>
+            <img src="./images/icons/shopping_cart_add.png">
+          </div>
+          
+        </div>
+
+        <div class="item-container">
+          <img class="menu-item-image" src="./images/drinks/iced-coffee.jpg">
+          <h3>Iced Coffee</h3>
+          <p class="description">Smooth cold brew coffee served over ice with optional milk or syrup.
+          </p>
+          <div class="flex">
+            <div class="item-price">$3.99</div>
+            <img src="./images/icons/shopping_cart_add.png">
+          </div>
+
+          
+        </div>
+
+        <div class="item-container">
+          <img class="menu-item-image" src="./images/drinks/oreo-milkshake.jpg">
+          <h3>Oreo Milkshake</h3>
+          <p class="description">A thick and creamy milkshake blended with Oreo cookies.
+          </p>
+          <div class="flex">
             <div class="item-price">$6.99</div>
             <img src="./images/icons/shopping_cart_add.png">
           </div>
 
-          <div class="item-container">
-            <img src="./images/sides/garlic-bread.jpg">
-            <h3>Garlic Bread</h3>
-            <p class="description">Garlic breadsticks with a hint of parmesan and herbs.</p>
-            <div class="item-price">$4.99</div>
-            <img src="./images/icons/shopping_cart_add.png">
-          </div>
-
-          <div class="item-container">
-            <img src="./images/sides/chicken-wings.jpg">
-            <h3>Chicken Wings</h3>
-            <p class="description">Juicy and flavorful wings tossed in your choice of BBQ or spicy buffalo sauce.</p>
-            <div class="item-price">$11.99</div>
-            <img src="./images/icons/shopping_cart_add.png">
-          </div>
-
-          <div class="item-container">
-            <img src="./images/sides/strawberry-feta.jpg">
-            <h3>Strawberry-Feta Salad</h3>
-            <p class="description">Fresh greens with sweet strawberries, creamy feta, mint, and a balsamic glaze.
-            </p>
-            <div class="item-price">$8.99</div>
-            <img src="./images/icons/shopping_cart_add.png">
-          </div>
+          
         </div>
-      </section> 
-
-      <section class="drinks" id="drinks">
-        <h2>Drinks</h2>
-
-        <div class="item-container">
-          <img src="./images/drinks/coca-cola.jpg">
-          <h3>Coca-Cola</h3>
-          <p class="description">Classic, refreshing cola with a bold and crisp taste.</p>
-          <div class="item-price">$2.99</div>
-          <img src="./images/icons/shopping_cart_add.png">
-        </div>
-
-        <div class="item-container">
-          <img src="./images/drinks/fanta.jpg">
-          <h3>Fanta</h3>
-          <p class="description">Sweet and fizzy orange soda with a zesty citrus flavor.
-          </p>
-          <div class="item-price">$2.99</div>
-          <img src="./images/icons/shopping_cart_add.png">
-        </div>
-
-        <div class="item-container">
-          <img src="./images/drinks/iced-tea.jpg">
-          <h3>Iced Tea</h3>
-          <p class="description">Refreshing cold brew tea with a hint of lemon or peach.
-          </p>
-          <div class="item-price">$3.99</div>
-          <img src="./images/icons/shopping_cart_add.png">
-        </div>
-
-        <div class="item-container">
-          <img src="./images/drinks/iced-coffee.jpg">
-          <h3>Iced Coffee</h3>
-          <p class="description">Smooth cold brew coffee served over ice with optional milk or syrup.
-          </p>
-          <div class="item-price">$3.99</div>
-          <img src="./images/icons/shopping_cart_add.png">
-        </div>
-
-        <div class="item-container">
-          <img src="./images/drinks/oreo-milkshake.jpg">
-          <h3>Oreo Milkshake</h3>
-          <p class="description">A thick and creamy milkshake blended with Oreo cookies.
-          </p>
-          <div class="item-price">$6.99</div>
-          <img src="./images/icons/shopping_cart_add.png">
-        </div>
+      </div>
+        
 
       </section>
 
-      <section class="desserts" id="desserts">
-        <h2>Desserts</h2>
+      <section class="desserts main" id="desserts">
+        <h2 class="menu-section">Desserts</h2>
 
-        <div class="item-container">
-          <img src="./images/desserts/sprinkles-ice-cream.jpg">
-          <h3>Vanilla Ice Cream with Sprinkles</h3>
-          <p class="description">Smooth vanilla ice cream topped with colorful sprinkles.
-          </p>
-          <div class="item-price">$4.99</div>
-          <img src="./images/icons/shopping_cart_add.png">
-        </div>
+        <div class="grid-container">
+          <div class="item-container">
+            <img class="menu-item-image" src="./images/desserts/sprinkles-ice-cream.jpg">
+            <h3>Vanilla Ice Cream with Sprinkles</h3>
+            <p class="description">Smooth vanilla ice cream topped with colorful sprinkles.
+            </p>
+            <div class="flex">
+              <div class="item-price">$4.99</div>
+              <img src="./images/icons/shopping_cart_add.png">
+            </div>
 
-        <div class="item-container">
-          <img src="./images/desserts/oreo-ice-cream.jpg">
-          <h3>Oreo Ice Cream</h3>
-          <p class="description">Rich and creamy vanilla ice cream swirled with crushed Oreo cookies
-          </p>
-          <div class="item-price">$5.99</div>
-          <img src="./images/icons/shopping_cart_add.png">
-        </div>
+        
+          </div>
+  
+          <div class="item-container">
+            <img class="menu-item-image" src="./images/desserts/oreo-ice-cream.jpg">
+            <h3>Oreo Ice Cream</h3>
+            <p class="description">Rich and creamy vanilla ice cream swirled with crushed Oreo cookies
+            </p>
+            <div class="flex">
+              <div class="item-price">$5.99</div>
+              <img src="./images/icons/shopping_cart_add.png">
+            </div>
 
-        <div class="item-container">
-          <img src="./images/desserts/brownie.jpg">
-          <h3>Brownie</h3>
-          <p class="description">Decadent and fudgy chocolate brownie, perfect for a sweet treat.
-          </p>
-          <div class="item-price">$4.99</div>
-          <img src="./images/icons/shopping_cart_add.png">
-        </div>
+          
+          </div>
+  
+          <div class="item-container">
+            <img class="menu-item-image" src="./images/desserts/brownie.jpg">
+            <h3>Brownie</h3>
+            <p class="description">Decadent and fudgy chocolate brownie, perfect for a sweet treat.
+            </p>
+            <div class="flex">
+              <div class="item-price">$4.99</div>
+              <img src="./images/icons/shopping_cart_add.png">
+            </div>
 
-        <div class="item-container">
-          <img src="./images/desserts/cheesecake.jpg">
-          <h3>New York Cheesecake</h3>
-          <p class="description">Classic creamy cheesecake with a graham cracker crust, served plain or with berries
-          </p>
-          <div class="item-price">$6.99</div>
-          <img src="./images/icons/shopping_cart_add.png">
-        </div>
 
-        <div class="item-container">
-          <img src="./images/desserts/fruit-salad.jpg">
-          <h3>Fruit Salad</h3>
-          <p class="description">A vibrant mix of fresh, seasonal fruits for a healthy dessert option.
-          </p>
-          <div class="item-price">$4.99</div>
-          <img src="./images/icons/shopping_cart_add.png">
+          </div>
+  
+          <div class="item-container">
+            <img class="menu-item-image" src="./images/desserts/cheesecake.jpg">
+            <h3>New York Cheesecake</h3>
+            <p class="description">Classic creamy cheesecake with a graham cracker crust, served plain or with berries
+            </p>
+            <div class="flex">
+              <div class="item-price">$6.99</div>
+              <img src="./images/icons/shopping_cart_add.png">
+            </div>
+
+           
+          </div>
+  
+          <div class="item-container">
+            <img class="menu-item-image" src="./images/desserts/fruit-salad.jpg">
+            <h3>Fruit Salad</h3>
+            <p class="description">A vibrant mix of fresh, seasonal fruits for a healthy dessert option.
+            </p>
+            <div class="flex">
+              <div class="item-price">$4.99</div>
+              <img src="./images/icons/shopping_cart_add.png">
+            </div>
+
+            
+          </div>
         </div>
+        
 
       </section>
     </section>
@@ -234,7 +316,7 @@
           <li>
             <a class="footer-item" href="index.html"><img class="footer-icon" src="./images/icons/home.png">Home</a>
           </li>
-          <li>
+          <li class="current">
             <a class="footer-item" href="menu.html"><img src="./images/icons/menu_book.svg" class="footer-icon">Menu</a>
           </li>
           <li>
