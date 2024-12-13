@@ -40,3 +40,33 @@ details[open] {
   font-size: 0.75rem;
   text-align: center;
 }
+
+.search-box {
+  width: 80%;
+}
+
+@media (min-width: 768px) {
+  .search-box {
+    width:50%
+  }
+
+  .topnav-container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.top-nav {
+    width: 100%
+  }
+
+  .menu-item-image {
+    width: 50%;
+    margin: 2.5rem 0; 
+  }
+
+  .item-container {
+    width: 50%;
+  }
+}
