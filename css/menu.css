@@ -27,9 +27,11 @@
 }
 
 .menu-item-image {
-  width: 80%;
+  width: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;
+  box-shadow: 1px 8px 8px 0px rgba(0,0,0,0.25);
+
 }
 
 .item-container {
@@ -37,4 +39,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1rem
+}
+
+.item-name {
+  font-weight: bold;
+  font-size: 1.25rem;
+  width: 100%;
+  text-align: center;
+  padding: 0.3rem 0;
+}
+
+.description {
+  font-size: 0.75rem;
+  line-height: 125%;
 }
