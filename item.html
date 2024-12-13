@@ -7,13 +7,8 @@
     <title>Burger Lab</title>
     <link rel="icon" type="image/x-icon" href="./images/icons/burger-solid.svg">
     <link rel="stylesheet" href="./css/base.css">
-    
-    <style>
-      
-      img {
-        width: 150px;
-      }
-    </style>
+    <link rel="stylesheet" href="./css/item.css">
+
   </head>
 
   <body>
@@ -32,23 +27,23 @@
       <div class="search-box"><img class="search-icon" src="./images/icons/search.png"><input type="text" placeholder="Start typing" class="input"></div>
       <nav>
         <ul class="navbar top-nav">
-          <li class="topnav-item"><a class="topnav-item" href="#burgers">Burgers</a></li>
-          <li class="topnav-item"><a class="topnav-item" href="#sides">Sides</a></li>
-          <li class="topnav-item"><a class="topnav-item" href="#drinks">Drinks</a></li>
-          <li class="topnav-item"><a class="topnav-item" href="#desserts">Desserts</a></li>
+          <li class="topnav-item"><a class="topnav-item" href="menu.html#burgers">Burgers</a></li>
+          <li class="topnav-item"><a class="topnav-item" href="menu.html#sides">Sides</a></li>
+          <li class="topnav-item"><a class="topnav-item" href="menu.html#drinks">Drinks</a></li>
+          <li class="topnav-item"><a class="topnav-item" href="menu.html#desserts">Desserts</a></li>
           </ul>
       </nav>
 
       </section>
 
-        <section>
-          <h2>Cheeseburger</h2>
+        <section class="main">
+          <h2 class="menu-section">Cheeseburger</h2>
           <div class="item-container">
-            <img src="./images/burgers/cheeseburger.jpg">
+            <img class="menu-item-image" src="./images/burgers/cheeseburger.jpg">
             <p class="description">Indulge in our gourmet cheeseburger, crafted with a perfectly grilled, juicy beef patty and layered with rich, melted cheddar and creamy camembert cheeses. This savory delight is topped with crispy, smoky bacon and fresh slices of ripe tomatoes, adding a burst of freshness to every bite. Nestled in a soft, toasted artisan bun, this cheeseburger strikes the perfect balance between bold flavors and satisfying textures, making it a true treat for burger lovers.</p>
             <section class="nutrition-info">
               <details>
-                <summary>Nutrition table</summary>
+                <summary class="table-title">Nutrition table</summary>
                 <table>
                   <thead>
                     <tr>
@@ -108,9 +103,11 @@
                 <p>*Percent Daily Values are based on a 2,000-calorie diet. Your values may vary based on calorie needs.</p>
               </details>
             </section>
-
-            <div class="item-price">$10.99</div>
-            <img src="./images/icons/shopping_cart_add.png">
+            <div class="flex box">
+              <div class="item-price">$10.99</div>
+              <img class="shopping-cart-add" src="./images/icons/shopping_cart_add.png">
+            </div>
+           
             
           </div>
           
@@ -123,7 +120,7 @@
               <li>
                 <a class="footer-item" href="index.html"><img class="footer-icon" src="./images/icons/home.png">Home</a>
               </li>
-              <li>
+              <li class="current">
                 <a class="footer-item" href="menu.html"><img src="./images/icons/menu_book.svg" class="footer-icon">Menu</a>
               </li>
               <li>

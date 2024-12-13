@@ -7,18 +7,16 @@
     <title>Burger Lab</title>
     <link rel="icon" type="image/x-icon" href="./images/icons/burger-solid.svg">
     <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/cart.css">
+
+  </head>
     
-    <style>
-    
-      img {
-        width: 150px;
-      }
-    </style>
+   
     
   <body>
 
     <header class="header">
-      <a href="index.html"><img class="back-arrow" src="./images/icons/arrow-left.png"></a>
+      <a href="menu.html"><img class="back-arrow" src="./images/icons/arrow-left.png"></a>
       <div class="flex">
         <h2 class="header-text">Your Cart</h2>
        
@@ -29,35 +27,37 @@
       
     </header>
 
-    <section>
+
+    
+    <section class="main topnav-container">
       <div class="item-container">
-        <img src="./images/burgers/cheeseburger.jpg">
-        <h3>Cheeseburger</h3>
+        <img class="menu-item-image" src="./images/burgers/cheeseburger.jpg">
+        <h3 class="item-name">Cheeseburger</h3>
         <div class="item-price">$10.99</div>
-        <div class="item-amount-controlls">
-          <img src="./images/icons/minus.png">
+        <div class="item-amount-controls">
+          <img class="control-icon" src="./images/icons/minus.png">
           <div class="item-amount">1</div>
-          <img src="./images/icons/plus.png">
+          <img class="control-icon" src="./images/icons/plus.png">
         </div>
-        <img src="./images/icons/delete.png">
+        <img class="trash-icon" src="./images/icons/delete.png">
       </div>
 
       <div class="item-container">
-        <img src="./images/sides/fries.jpg">
-        <h3>French fries</h3>
+        <img class="menu-item-image" src="./images/sides/fries.jpg">
+        <h3 class="item-name">French fries</h3>
         <div class="item-price">$5.99 x 2</div>
-        <div class="item-amount-controlls">
-          <img src="./images/icons/minus.png">
+        <div class="item-amount-controls">
+          <img class="control-icon" src="./images/icons/minus.png">
           <div class="item-amount">2</div>
-          <img src="./images/icons/plus.png">
+          <img class="control-icon" src="./images/icons/plus.png">
         </div>
-        <img src="./images/icons/delete.png">
+        <img class="trash-icon"src="./images/icons/delete.png">
       </div>
         
     </section>
 
     <section class="order-summary">
-      <select name="restaurant" id="restaurant">
+      <select class="restaurant-select" name="restaurant" id="restaurant">
         <option>Choose your restaurant</option>
         <option value="Oulu Center">Oulu Center</option>
         <option value="Oulu Tuira">Oulu Tuira</option>
@@ -66,10 +66,10 @@
 
       <div class="price-summary">
         <div class="total">Total</div>
-        <div class="total-price">$22.97</div>
+        <div class="total total-price">$22.97</div>
       </div>
 
-      <button type="submit">Order now</button>
+      <button class="order-btn" type="submit">Order now</button>
         
 
     </section>
@@ -83,7 +83,7 @@
           <li>
             <a class="footer-item" href="menu.html"><img src="./images/icons/menu_book.svg" class="footer-icon">Menu</a>
           </li>
-          <li>
+          <li class="current">
             <a href="cart.html" class="footer-item"><img src="./images/icons/shopping_cart.png" class="footer-icon">Cart</a>
           </li>
           <li>
