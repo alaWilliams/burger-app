@@ -69,4 +69,9 @@ details[open] {
   .item-container {
     width: 50%;
   }
+
+  .flex {
+    justify-content: space-between;
+    margin: 0 3rem;
+   }
 }

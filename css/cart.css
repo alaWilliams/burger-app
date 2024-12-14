@@ -126,7 +126,8 @@
     flex-direction: column;
   }
   .item-container {
-    width: 30%;
+    width: 40%;
+    padding-right: 2rem;
   }
 
   .menu-item-image {
@@ -153,4 +154,9 @@
   .item-amount-controls{
     justify-content: space-evenly;
   }
+
+  .flex {
+    justify-content: space-between;
+    margin: 0 3rem;
+   }
 }
